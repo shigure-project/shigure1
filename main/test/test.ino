@@ -22,11 +22,11 @@ void setup() {
 }
 
 void loop() {
-  if (flag0 == false){
+  if (flag0 == false) {
     release_time = millis();
     Serial.println("ready");
     if (digitalRead(4) == LOW) {
-      flag0 == true;
+      flag0 = true;
       Serial.println("released");
     }
     
