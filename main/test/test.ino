@@ -25,7 +25,7 @@ void loop() {
   if (flag0 == false) {
     release_time = millis();
     Serial.println("ready");
-    if (digitalRead(4) == LOW) {
+    if (digitalRead(4) == HIGH) {
       flag0 = true;
       Serial.println("released");
     }
