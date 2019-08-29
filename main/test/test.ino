@@ -25,8 +25,7 @@ void loop() {
       flag0 == true;
     }
     
-  }
-  if (flag0 == true){
+  } else {
     if ((flag1 == false) && (millis() > release_time + 5000)) {
       servo1.write(180);
       flag1 = true;
